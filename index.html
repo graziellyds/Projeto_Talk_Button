@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js\animatescroll.js"></script>
     
     <title>Document</title>
 </head>
@@ -30,11 +33,11 @@
         </nav>
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre o Projeto</a></li>
-                <li class="nav-item"><a href=".functionality" class="nav-link">Funcionalidades</a></li>
+                <li class="nav-item"> <a href="index.html" class="nav-link" >Início</a></li>
+                <li class="nav-item"><a href="#" onclick="$('.about_project').animatescroll();" class="nav-link">Sobre o Projeto</a></li>
+                <li class="nav-item"><a href="#" onclick="$('.functionality').animatescroll();" class="nav-link">Funcionalidades</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Equipe de Desenvolvimento</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="#" onclick="$('.container-3').animatescroll();" class="nav-link">Contato</a></li>
             </ul>
         </div>
     </header>
@@ -145,10 +148,12 @@
             <div id="btn-contact">
                 Enviar
             </div>
-    
         </div>
     </div>
-
-
+    <footer class="footer">
+        <div class="line-footer"></div>
+        <p>© <span>2024</span> Talks Button. Todos os direitos reservados.</p>
+    </footer>
+    
 </body>
 </html>
